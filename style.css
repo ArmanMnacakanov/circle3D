@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1d2b3a;
+  overflow: hidden;
+  filter: url(#gooey);
+}
+body .circle {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  bbackground: rgb(34, 193, 195);
+  background: linear-gradient(158deg, rgb(255, 255, 255) 0%, rgb(253, 187, 45) 100%);
+  border-radius: 50%;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.396);
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  body .circle {
+    width: 150px;
+    height: 150px;
+  }
+}
+body .circle:active {
+  scale: 0.8;
+}
+body .particles {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(158deg, rgb(255, 255, 255) 0%, rgb(253, 187, 45) 100%);
+}
+@keyframes animate {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(var(--x), var(--y));
+  }
+}
+
+svg {
+  width: 0;
+  height: 0;
+}/*# sourceMappingURL=style.css.map */
