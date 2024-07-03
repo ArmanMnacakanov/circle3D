@@ -24,6 +24,7 @@ body {
         cursor: pointer;
         transition: .4s;
         box-shadow:  0 15px 20px 0 rgba(0, 0, 0, 0.396);
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 
         @media(min-width:320px) and (max-width:552px){
             width: 150px;
